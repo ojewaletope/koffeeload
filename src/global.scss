@@ -1,0 +1,83 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+.page-wrapper {
+  padding: 44px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 89px;
+}
+.input-label {
+  display: block;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.form-control {
+  width: 100%;
+  height: 52px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  margin-top: 8px;
+  padding: 0 15px;
+}
+.form-control:focus {
+  outline: none;
+}
+.btn {
+  border-radius: 10px;
+  border: none;
+  height: 52px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+}
+.form-btn {
+  color: #fff;
+  background: var(--ion-color-custom-dark);
+  margin-top: 44px;
+}
+.terms {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.terms a {
+  text-decoration: none;
+  color: #000000;
+}
