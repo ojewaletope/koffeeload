@@ -1,0 +1,11 @@
+ion-toolbar {
+  --background: var(--ion-color-custom-secondary);
+}
+ion-content {
+  --padding: 22px
+}
+
+.cart-card {
+  background: var(--ion-color-custom-light);
+  height: 300px;
+}

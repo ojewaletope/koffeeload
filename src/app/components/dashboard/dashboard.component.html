@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <div class="header-flex">
+    <h2 class="header">Welcome Adedire</h2>
+    <cart></cart>
+  </div>
+  <ion-img src="assets/img/background.png" class="top-img"></ion-img>
+  <div class="logo-container">
+    <ion-img src="assets/img/koffee_logo.png"></ion-img>
+  </div>
+  <p class="content">
+    We have sourced the finest and rarest coffees, that easily allows coffee
+    lovers to experience one of life's simple pleasures delivered right to your
+    doorstep.
+  </p>
+
+ <reusable-bg></reusable-bg>
+
+  <p class="top-selling">Top selling coffee</p>
+
+ <div class="card-container">
+    <card *ngFor="let item of data" [item]="item"></card>
+ </div>
+  <div class="btn-container">
+    <button class="btn">Create coffee plan</button>
+  </div>
+</ion-content>

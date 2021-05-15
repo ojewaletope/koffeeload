@@ -1,0 +1,39 @@
+ion-content {
+  --background: var(--ion-color-custom-light);
+  --padding-end: 31px;
+  --padding-start: 31px;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-img {
+  margin: 12px 0 15px;
+}
+.logo-container {
+  margin-top: 0;
+  width: 132px;
+}
+.logo-container ion-img {
+  width: 100%;
+}
+.content {
+  font-size: 12px;
+  text-align: justify;
+  padding: 10px 0;
+}
+
+
+.top-selling {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.btn-container {
+  margin: 27px 0 18px;
+}
+.btn {
+  text-transform: capitalize;
+}

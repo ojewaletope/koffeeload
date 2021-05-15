@@ -27,6 +27,8 @@
 
 * {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .page-wrapper {
   padding: 44px;
@@ -79,5 +81,31 @@
 
 .terms a {
   text-decoration: none;
+  color: #000000;
+}
+:root {
+  ion-tab-button.tab-selected {
+    ion-icon, ion-label {
+      color: #000000 !important;
+      --ion-color-base: #000000 !important;
+    }
+  }
+}
+.header {
+  font-size: 24px;
+  font-family: 'Playfair Display';
+  font-weight: bold;
+}
+
+.card-container {
+  display: grid;
+  grid-gap: 7px;
+  grid-template-columns: repeat(auto-fill, minmax(30.33%, 1fr));
+}
+.toolbar-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 84px;
+  padding: 0 0 14px 24px;
   color: #000000;
 }

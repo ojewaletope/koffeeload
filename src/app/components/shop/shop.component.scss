@@ -1,0 +1,38 @@
+ion-content {
+  --background: var(--ion-color-custom-light);
+  --padding-end: 31px;
+  --padding-start: 31px;
+  --padding-bottom: 31px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 46px;
+
+}
+
+.arrow-back {
+  color: #fff;
+  font-size: 25px;
+}
+.search-icon {
+  font-size: 30px;
+  color: var(--ion-color-custom-light);
+  position: relative;
+  top: -39px;
+  left: 8px
+}
+*::placeholder {
+  color: var(--ion-color-custom-light);
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.search-container {
+  margin-bottom: -35px;
+}
+.card-container {
+  margin-top: 14px;
+}

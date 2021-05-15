@@ -1,0 +1,14 @@
+<ion-content>
+  <div class="header-flex">
+    <ion-icon class="arrow-back" name="arrow-back"></ion-icon>
+    <cart></cart>
+  </div>
+ <div class="search-container">
+   <input type="text" placeholder="Search" class="form-control"/>
+   <ion-icon class="search-icon" name="search"></ion-icon>
+ </div>
+  <reusable-bg></reusable-bg>
+  <div class="card-container">
+    <card *ngFor="let item of data" [item]="item"></card>
+  </div>
+</ion-content>
