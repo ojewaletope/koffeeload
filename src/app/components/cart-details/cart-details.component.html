@@ -4,21 +4,21 @@
 <ion-content>
   <div class="page-wrapper">
     <div class="cart-card-container">
-      <div class="cart-card">
+      <div class="cart-card" *ngFor="let item of cartItems; let i = index">
         <div class="cart-card-top">
           <div class="img-container">
-            <ion-img src="assets/img/capuccino.png"></ion-img>
+            <ion-img [src]="item.img"></ion-img>
           </div>
           <div class="item-wrapper">
-            <span class="item-title">Cappuccino</span>
-            <span class="item-price"> &#163;20</span>
+            <span class="item-title">{{item.name}}</span>
+            <span class="item-price"> &#163;{{item.price | number: '1.2-2'}}</span>
           </div>
         </div>
         <div class="cart-card-bottom">
           <div class="bottom-wrapper">
             <div class="bottom-left">
               <ion-icon name="heart" class="icon icon-heart"></ion-icon>
-              <span class="delete-span">
+              <span class="delete-span" (click)="deleteItem(i)">
                 <ion-icon name="trash" class="icon icon-delete"></ion-icon>
                 <span class="remove-text">Remove</span>
               </span>
@@ -36,8 +36,13 @@
     </div>
     <div class="total-container">
       <p>Total</p>
-      <p>&#163;40</p>
+      <p>&#163;{{totalSum | number: '1.2-2'}}</p>
     </div>
     <button class="btn btn-dark">Complete Your Order</button>
+
+    <p class="rec-viewed">Recently Viewed</p>
+    <div class="card-container">
+      <card *ngFor="let item of data" [item]="item"></card>
+    </div>
   </div>
 </ion-content>

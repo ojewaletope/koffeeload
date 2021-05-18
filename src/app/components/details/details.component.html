@@ -1,3 +1,26 @@
-<p>
-  details works!
-</p>
+<ion-content>
+  <div class="page-wrapper">
+   <div class="header-wrapper">
+     <ion-icon (click)="back()" class="arrow-back" name="arrow-back"></ion-icon>
+     <search></search>
+   </div>
+    <h2 class="img-container" [style.background-image]="'url('+item.img+')'">
+        {{item.name}}
+    </h2>
+    <p class="item-para">{{item.description}}</p>
+    <p class="code">SKU: {{item.code}}</p>
+    <p class="price">&#163;{{item.price | number: '1.2-2'}}</p>
+    <div class="select-wrapper">
+      <ion-select placeholder="1">
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+      </ion-select>
+      <button class="btn details-btn">Add To Cart</button>
+    </div>
+    <p class="top-selling">Top Selling Coffee</p>
+    <div class="card-container">
+      <card *ngFor="let item of topSelling" [item]="item"></card>
+    </div>
+  </div>
+</ion-content>

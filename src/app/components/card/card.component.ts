@@ -25,8 +25,14 @@ export class CardComponent implements OnInit {
 
   addToCart(item: Coffee, event) {
     event.stopPropagation();
-    this.dataService.addItems(item).then(() => {
-      this.dataService.addToCart.emit(item);
+    this.dataService.getItems().then((data) => {
+      if (data !== null) {
+        this.items = data;
+      }
+      this.items.push(item);
+      this.dataService.addItems(this.items).then(() => {
+        this.dataService.addToCart.emit(item);
+      });
     });
     // this.storage.set('product', id).then(() => {
     //   this.dataService.addToCart.emit(id);

@@ -1,0 +1,63 @@
+ion-content {
+  --background: var(--ion-color-custom-light);
+}
+.page-wrapper {
+  padding: 0 23px 23px;
+}
+.header-wrapper {
+  margin: 45px 8px 12px;
+}
+
+
+ .img-container {
+   //background: url("../../../assets/img/cappuccino.png") no-repeat;
+   background-size: 100% !important;
+   background-blend-mode: multiply;
+   height: 192px;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+   font-size: 24px;
+   font-weight: bold;
+   font-family: 'Playfair Display', serif;
+   padding-bottom: 5px;
+   border-radius: 10px;
+ }
+.item-para {
+  //text-align: justify;
+  font-size: 13px;
+}
+.code {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.select-wrapper {
+  margin-top: 13px;
+  display: flex;
+}
+.select-wrapper ion-select {
+  background: #fff;
+  width: 70px;
+  height: 55px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.details-btn {
+  background: var(--ion-color-custom-dark);
+  color: #fff;
+  width: 163px;
+  height: 55px;
+  border-radius: 5px;
+  margin-left: 16px;
+}
+.top-selling {
+  margin: 27px 0 18px;
+  font-weight: bold;
+}

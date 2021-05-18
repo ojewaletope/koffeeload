@@ -30,7 +30,7 @@ export class DataService {
       id: 3,
       name: 'Corretto',
       price: 25,
-      img: 'assets/img/correto.png',
+      img: 'assets/img/corretto.png',
       code: 'GRAMHKPODS-32',
       description:
         'Colombia Caturra coffee is famous for its dark fruit aromas and flavour of blackberry and cherry. It also features notes of toasted almond and toasted sourdough.',
@@ -57,7 +57,7 @@ export class DataService {
       id: 6,
       name: 'Corretto',
       price: 25,
-      img: 'assets/img/correto.png',
+      img: 'assets/img/corretto.png',
       code: 'GRAMHKPODS-35',
       description:
         'Colombia Caturra coffee is famous for its dark fruit aromas and flavour of blackberry and cherry. It also features notes of toasted almond and toasted sourdough.',
@@ -75,7 +75,7 @@ export class DataService {
       id: 8,
       name: 'C. Macchiatto',
       price: 20,
-      img: 'assets/img/macchiatto.png',
+      img: 'assets/img/machiatto.png',
       code: 'GRAMHKPODS-37',
       description:
         'Colombia Caturra coffee is famous for its dark fruit aromas and flavour of blackberry and cherry. It also features notes of toasted almond and toasted sourdough.',
@@ -84,7 +84,7 @@ export class DataService {
       id: 9,
       name: 'Corretto',
       price: 25,
-      img: 'assets/img/correto.png',
+      img: 'assets/img/corretto.png',
       code: 'GRAMHKPODS-38',
       description:
         'An intense sweetness coupled with rich flavours of roasted hazelnut and vanilla spice make the Brazil Yellow Bourbon a truly unmissable blend.',
@@ -120,13 +120,14 @@ export class DataService {
     );
   }
 
-  async addItems(item: Coffee) {
-    const items = [];
-    items.push(item);
+  async addItems(items: Coffee[]) {
     await localStorage.setItem('products', JSON.stringify(items));
   }
 
   async getItems() {
     return JSON.parse(localStorage.getItem('products'));
+  }
+  async removeItems() {
+    return localStorage.removeItem('products');
   }
 }

@@ -97,7 +97,7 @@
 }
 .header {
   font-size: 24px;
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', sans-serif;
   font-weight: bold;
 }
 
@@ -114,3 +114,7 @@
   color: #000000;
 }
 
+.arrow-back {
+  color: #fff;
+  font-size: 25px;
+}

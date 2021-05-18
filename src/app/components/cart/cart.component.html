@@ -1,4 +1,4 @@
-<div class="cart-container">
-  <ion-icon class="cart" name="cart-outline" (click)="openCart()"></ion-icon>
+<div class="cart-container" (click)="openCart()">
+  <ion-icon class="cart" name="cart-outline"></ion-icon>
   <span class="cart-value" *ngIf="cartItems.length>0">{{cartItems.length}}</span>
 </div>

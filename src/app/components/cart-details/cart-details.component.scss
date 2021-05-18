@@ -5,7 +5,7 @@ ion-content {
   --padding: 22px
 }
 .page-wrapper {
-  padding: 0 22px;
+  padding: 0 22px 14px;
 }
 .cart-card {
   background: var(--ion-color-custom-light);
@@ -113,4 +113,10 @@ ion-img {
 .total-container p {
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
+}
+.rec-viewed {
+  margin-top: 23px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 13px;
 }
