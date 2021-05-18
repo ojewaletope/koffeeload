@@ -9,6 +9,7 @@ import { ShopComponent } from './shop/shop.component';
 import { CartComponent } from './cart/cart.component';
 import { CardComponent } from './card/card.component';
 import { CartDetailsComponent } from './cart-details/cart-details.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   imports: [IonicModule, CommonModule],
@@ -21,6 +22,7 @@ import { CartDetailsComponent } from './cart-details/cart-details.component';
     CartComponent,
     CardComponent,
     CartDetailsComponent,
+    DetailsComponent,
   ],
   exports: [ReusableBgComponent],
 })

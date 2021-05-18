@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'cart',
@@ -7,7 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./cart.component.scss'],
 })
 export class CartComponent implements OnInit {
-  constructor(private router: Router) {}
+  cartItems: number[] = [];
+  constructor(private router: Router, private dataService: DataService) {
+    this.dataService.addToCart.subscribe((res) => {
+      this.cartItems.push(res);
+      console.log(this.cartItems);
+    });
+  }
 
   ngOnInit() {}
 

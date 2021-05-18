@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Coffee } from '../../interfaces/interface';
+import { of } from 'rxjs';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,25 +10,14 @@ import { Coffee } from '../../interfaces/interface';
 })
 export class DashboardComponent implements OnInit {
   data: Coffee[] = [];
-  constructor() {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.data = [
-      {
-        name: 'Cappuccino',
-        price: 20,
-        img: 'assets/img/capuccino.png',
-      },
-      {
-        name: 'C. Macchiatto',
-        price: 20,
-        img: 'assets/img/macchiatto.png',
-      },
-      {
-        name: 'Corretto',
-        price: 25,
-        img: 'assets/img/correto.png',
-      },
-    ];
+    this.getData();
+  }
+  getData() {
+    return this.dataService.getData().subscribe((data) => {
+      this.data = data;
+    });
   }
 }

@@ -71,6 +71,10 @@
   background: var(--ion-color-custom-dark);
   margin-top: 44px;
 }
+.btn-dark {
+  background: var(--ion-color-custom-dark);
+  color: #fff;
+}
 .terms {
   display: flex;
   justify-content: center;
@@ -109,3 +113,4 @@
   padding: 0 0 14px 24px;
   color: #000000;
 }
+

@@ -1,3 +1,18 @@
 .cart {
-  font-size: 28px;
+  font-size: 40px;
+}
+.cart-value {
+  color: var(--ion-color-custom-dark);
+  position: absolute;
+  right: 1%;
+  bottom: 61%;
+  background: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.cart-container {
+  position: relative;
 }
