@@ -7,7 +7,8 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
-
+import { AppMinimize } from '@ionic-native/app-minimize/ngx';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -17,7 +18,11 @@ import { ComponentsModule } from './components/components.module';
     AppRoutingModule,
     ComponentsModule,
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    Keyboard,
+    AppMinimize,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -21,7 +21,7 @@ export class DataService {
       id: 2,
       name: 'C. Macchiatto',
       price: 20,
-      img: 'assets/img/macchiatto.png',
+      img: 'assets/img/cappuccino.png',
       code: 'GRAMHKPODS-31',
       description:
         'Colombia Caturra coffee is famous for its dark fruit aromas and flavour of blackberry and cherry. It also features notes of toasted almond and toasted sourdough.',
@@ -48,7 +48,7 @@ export class DataService {
       id: 5,
       name: 'C. Macchiatto',
       price: 20,
-      img: 'assets/img/macchiatto.png',
+      img: 'assets/img/cappuccino.png',
       code: 'GRAMHKPODS-34',
       description:
         'Colombia Caturra coffee is famous for its dark fruit aromas and flavour of blackberry and cherry. It also features notes of toasted almond and toasted sourdough.',
@@ -75,7 +75,7 @@ export class DataService {
       id: 8,
       name: 'C. Macchiatto',
       price: 20,
-      img: 'assets/img/machiatto.png',
+      img: 'assets/img/cappuccino.png',
       code: 'GRAMHKPODS-37',
       description:
         'Colombia Caturra coffee is famous for its dark fruit aromas and flavour of blackberry and cherry. It also features notes of toasted almond and toasted sourdough.',

@@ -9,10 +9,10 @@
         <label for="password" class="input-label">Password</label>
         <input type="password" id="password" class="form-control"/>
         <span class="forgot-password"><a>Forgot Password?</a></span>
-        <button class="btn form-btn">Login</button>
+        <button class="btn form-btn" (click)="login()">Login</button>
       </form>
       <span class="or-span">or</span>
-      <button class="btn email-signup_btn">Sign Up with Email</button>
+      <button class="btn email-signup_btn" (click)="signUp()">Sign Up with Email</button>
       <button class="btn">Sign in with Google</button>
       <span class="terms"><a>Terms of Service and Policy</a></span>
     </div>

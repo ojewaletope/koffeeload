@@ -1,7 +1,13 @@
 {
-  "name": "example",
+  "name": "KofeeLoad",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "SplashScreen": {
+        "launchShowDuration": 3000,
+        "launchAutoHide": true
+      }
+    },
+    "cordova": {}
   },
   "type": "angular"
 }
